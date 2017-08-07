@@ -31,7 +31,8 @@ gulp.task('scripts', function() {
 	return gulp.src([
 			'src/libs/jquery/dist/jquery.min.js',
 			'src/libs/jquery.mmenu/jquery.mmenu.all.js',
-			'src/libs/bootstrap/dist/js/bootstrap.min.js'
+			'src/libs/bootstrap/dist/js/bootstrap.min.js',
+			'src/libs/parallax/parallax.min.js'
 			
 		])
 	.pipe(plumber())

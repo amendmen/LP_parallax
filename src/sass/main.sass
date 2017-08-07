@@ -4,21 +4,33 @@ body
 	margin: 0
 	padding: 0
 	font-size: 14px
-
+	overflow-y: scroll
 #my-header
 	height: 100vh
-	background-image: url('../img/bg.jpg')
-	background-size: cover
 	.top-fix
-		display: fixed
-		background-color: #FFF
+		position: fixed
+		width: 100%
+		left: 0
+		top: 0
 		padding: 10px
 		background-color: #fff
 		border-bottom: 1px solid $main
+		z-index: 9999
 		.logo
 			display: inline-block
 		.nav
 			display: inline-block
+html.mm-opened
+	overflow-y: scroll
+
+#scene
+	width: 100%
+	h1
+		text-align: center	
+	img
+		position: center
+		width: 100%
+		background-size: content
 // hamburger //		
 #nav-toggle
 	cursor: pointer

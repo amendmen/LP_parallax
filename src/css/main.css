@@ -1,23 +1,37 @@
 body {
   margin: 0;
   padding: 0;
-  font-size: 14px; }
+  font-size: 14px;
+  overflow-y: scroll; }
 
 #my-header {
-  height: 100vh;
-  background-image: url("../img/bg.jpg");
-  -webkit-background-size: cover;
-          background-size: cover; }
+  height: 100vh; }
   #my-header .top-fix {
-    display: fixed;
-    background-color: #FFF;
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
     padding: 10px;
     background-color: #fff;
-    border-bottom: 1px solid #008ED6; }
+    border-bottom: 1px solid #008ED6;
+    z-index: 9999; }
     #my-header .top-fix .logo {
       display: inline-block; }
     #my-header .top-fix .nav {
       display: inline-block; }
+
+html.mm-opened {
+  overflow-y: scroll; }
+
+#scene {
+  width: 100%; }
+  #scene h1 {
+    text-align: center; }
+  #scene img {
+    position: center;
+    width: 100%;
+    -webkit-background-size: content content;
+            background-size: content; }
 
 #nav-toggle {
   cursor: pointer;
