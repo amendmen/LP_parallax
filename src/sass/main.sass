@@ -1,3 +1,5 @@
+$main: #008ED6
+
 body
 	margin: 0
 	padding: 0
@@ -11,9 +13,52 @@ body
 		display: fixed
 		background-color: #FFF
 		padding: 10px
+		background-color: #fff
+		border-bottom: 1px solid $main
 		.logo
 			display: inline-block
 		.nav
 			display: inline-block
-			vertical-align: middle
-			
+// hamburger //		
+#nav-toggle
+	cursor: pointer
+	padding: 10px 35px 16px 0px
+#nav-toggle span,
+#nav-toggle span:before, 
+#nav-toggle span:after 
+  cursor: pointer
+  border-radius: 1px
+  height: 5px
+  width: 35px
+  background: $main
+  position: absolute
+  display: block
+  content: ''
+#nav-toggle span:before 
+  top: -10px
+#nav-toggle span:after 
+  bottom: -10px
+#nav-toggle span,
+#nav-toggle span:before,
+#nav-toggle span:after 
+  transition: all 0.2s ease-in-out
+#nav-toggle.active span 
+  background-color: transparent
+#nav-toggle.active span:before,
+#nav-toggle.active span:after 
+  top: 0
+#nav-toggle.active span:before 
+  transform: rotate(45deg)
+#nav-toggle.active span:after
+  transform: rotate(-45deg)
+
+
+//center text
+.flex-container
+	display: flex
+	color: #fff
+	justify-content: center
+	height: 100%
+	.flex-wrap
+		width: 70%
+		text-align: center
