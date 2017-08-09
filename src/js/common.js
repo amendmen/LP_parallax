@@ -1,13 +1,12 @@
 $(document).ready(function(){
 
 	$("#menu").mmenu({
-
+		"slidingSubmenus": false,
 		"extensions": [
 		"fx-panels-zoom"		
 		],
 		"offCanvas": {
-			"position": "left",
-			"zposition" : "front"
+			"position": "right"
 		}
 
 		

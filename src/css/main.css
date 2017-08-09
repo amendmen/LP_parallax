@@ -24,14 +24,19 @@ html.mm-opened {
   overflow-y: scroll; }
 
 #scene {
-  width: 100%; }
-  #scene h1 {
-    text-align: center; }
-  #scene img {
-    position: center;
+  width: 100%;
+  overflow: hidden; }
+  #scene .layer.center-text {
     width: 100%;
-    -webkit-background-size: content content;
-            background-size: content; }
+    text-align: center; }
+  #scene h1 {
+    font-size: 50px;
+    color: #fff;
+    font-weight: bold; }
+  #scene img {
+    position: relative;
+    left: -10%;
+    width: 120%; }
 
 #nav-toggle {
   cursor: pointer;
