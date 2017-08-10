@@ -1,15 +1,25 @@
 $(document).ready(function(){
 
+	function headHeight() {
+		$( '#scene' ).css("height", $( window ).height());
+	}
+	headHeight()
+	$( window ).resize(function() {
+		headHeight()
+	});
+
 	$("#menu").mmenu({
+
 		"slidingSubmenus": false,
+
 		"extensions": [
-		"fx-panels-zoom"		
+		"fx-panels-zoom"
 		],
+
 		"offCanvas": {
 			"position": "right"
 		}
 
-		
 	});
 
 	var api = $("#menu").data( "mmenu" );
