@@ -4,7 +4,8 @@ body {
   font-size: 14px;
   overflow-y: scroll;
   min-width: 320px;
-  position: relative; }
+  position: relative;
+  background-color: #F7F8FA; }
 
 #my-header .top-fix {
   position: fixed;
@@ -152,3 +153,27 @@ html.mm-opened {
     background-color: #008ED6;
     margin-top: 10px;
     margin-bottom: 20px; }
+
+.features-wrap {
+  padding: 10px; }
+
+.features-item {
+  text-align: center;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 25px;
+  background-color: #FFF;
+  border-bottom: 3px solid rgba(0, 0, 0, 0.1); }
+  .features-item:hover {
+    border-bottom: 3px solid #008ED6; }
+  .features-item i, .features-item h3 {
+    color: #008ED6; }
+  .features-item i {
+    font-size: 60px;
+    font-weight: 300; }
+
+.about-text,
+.about-img {
+  padding: 50px; }
+
+.about-img img {
+  width: 100%; }
