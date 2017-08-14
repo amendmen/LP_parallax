@@ -27,12 +27,19 @@ $(document).ready(function(){
 	api.bind("open:finish", function($panel) {
 		$('#nav-toggle').addClass('active');
 	});
-
 	api.bind("close:finish", function($panel) {
 		$('#nav-toggle').removeClass('active')
 	});
 
-	var scene = document.getElementById('scene')
-	var parallax = new Parallax(scene)
+	var scene = document.getElementById('scene');
+	var parallax = new Parallax(scene);
 
+	$( '.mem-photo').hover(
+		function() {
+		$(this).stop().next().css( 'bottom', '4px')
+	}, function() {
+		$(this).stop().next().css('bottom', '100%')
+	});
+	
+	
 })
