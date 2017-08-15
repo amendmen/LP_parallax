@@ -180,13 +180,13 @@ html.mm-opened {
   padding-right: 15px;
   overflow: hidden; }
   .team-member-box .mem-wrap {
-    position: relative; }
+    position: relative;
+    border-bottom: 4px solid rgba(0, 0, 0, 0.1); }
+    .team-member-box .mem-wrap:hover {
+      border-bottom: 4px solid #008ED6; }
   .team-member-box .mem-photo {
     -webkit-border-radius: 3px;
-            border-radius: 3px;
-    border-bottom: 4px solid rgba(0, 0, 0, 0.1); }
-    .team-member-box .mem-photo:hover {
-      border-bottom: 4px solid #008ED6; }
+            border-radius: 3px; }
     .team-member-box .mem-photo img {
       width: 100%; }
   .team-member-box .mem-info {

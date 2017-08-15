@@ -34,11 +34,11 @@ $(document).ready(function(){
 	var scene = document.getElementById('scene');
 	var parallax = new Parallax(scene);
 
-	$( '.mem-photo').hover(
+	$( '.mem-wrap').hover(
 		function() {
-		$(this).stop().next().css( 'bottom', '4px')
+		$(this).children().next().css( 'bottom', '0')
 	}, function() {
-		$(this).stop().next().css('bottom', '100%')
+		$(this).children().next().css('bottom', '100%')
 	});
 	
 	
