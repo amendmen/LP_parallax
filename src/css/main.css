@@ -8,6 +8,9 @@ body {
   background-color: #F7F8FA;
   z-index: 100; }
 
+a {
+  color: #008ED6; }
+
 #my-header .top-fix {
   position: fixed;
   width: 100%;
@@ -186,7 +189,8 @@ html.mm-opened {
 
 #features,
 #about,
-#team {
+#team,
+#blog {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1);
   padding-bottom: 70px; }
 
@@ -267,7 +271,7 @@ html.mm-opened {
   -webkit-background-size: cover;
           background-size: cover; }
   .parallax .fixed-img .overlay {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.7);
     width: 100%;
     padding-top: 150px;
     padding-bottom: 150px;
@@ -282,3 +286,26 @@ html.mm-opened {
       text-align: center;
       width: 60%;
       color: #fff; }
+
+#blog .blog-img {
+  text-align: center; }
+  #blog .blog-img img {
+    -webkit-border-radius: 50%;
+            border-radius: 50%;
+    width: 150px; }
+
+#blog .carousel-caption {
+  position: static;
+  width: 100%;
+  color: inherit;
+  text-shadow: none; }
+  #blog .carousel-caption h4 {
+    font-weight: bold; }
+
+.carousel-control {
+  color: #008ED6;
+  text-shadow: none; }
+
+.carousel-control.left,
+.carousel-control.right {
+  background: none; }

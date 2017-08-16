@@ -40,6 +40,10 @@ $(document).ready(function(){
 	}, function() {
 		$(this).children().next().css('bottom', '100%')
 	});
+
+	$('.carousel').carousel({
+  interval: 5000
+})
 	
 	
 })
