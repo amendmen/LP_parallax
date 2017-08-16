@@ -8,6 +8,7 @@ body
 	min-width: 320px
 	position: relative
 	background-color: #F7F8FA
+	z-index: 100
 #my-header
 	.top-fix
 		position: fixed
@@ -16,7 +17,7 @@ body
 		top: 0
 		padding: 10px
 		background-color: #fff
-		border-bottom: 1px solid $main
+		border-bottom: 1px solid rgba(0,0,0,0.1)
 		z-index: 9999
 		.logo
 			display: inline-block
@@ -60,6 +61,7 @@ html.mm-opened
 
 
 #scene
+	z-index: 150
 	width: 100%
 	overflow: hidden
 	img
@@ -122,17 +124,19 @@ html.mm-opened
 		margin-top: 10px
 		margin-bottom: 20px
 
-.features-wrap
+.features-wrap,
+.client-wrap
 	padding: 10px
-	height: 100%
-.features-item
+.features-item,
+.client
 	text-align: center
 	border: 1px solid rgba(0,0,0,0.1)
 	padding: 25px
 	background-color: #FFF
-	border-bottom: 3px solid rgba(0,0,0,0.1)
+	border-radius: 3px
+	border-bottom: 4px solid rgba(0,0,0,0.1)
 	&:hover
-		border-bottom: 3px solid $main
+		border-bottom: 4px solid $main
 	i, h3
 		color: $main
 	i 
@@ -142,11 +146,16 @@ html.mm-opened
 .about-img
 	img
 		width: 100%
-
+#features,
+#about,
+#team
+	border-bottom: 1px solid rgba(0,0,0,0.1)
+	padding-bottom: 70px
 .team-member-box
 	padding-left: 15px
 	padding-right: 15px
 	overflow: hidden
+	margin-bottom: 15px
 	.mem-wrap
 		position: relative
 		border-bottom: 4px solid rgba(0,0,0,0.1)
@@ -154,7 +163,6 @@ html.mm-opened
 			border-bottom: 4px solid $main
 	.mem-photo
 		border-radius: 3px
-		
 		img
 			width: 100%
 	.mem-info
@@ -172,3 +180,51 @@ html.mm-opened
 			display: flex
 			flex-direction: column
 			justify-content: center
+
+#testimonials 
+	padding-bottom: 100px
+	.title
+		margin-bottom: 100px
+	.client-img
+		position: relative
+		bottom: 80px
+		width: 35%
+		margin-left: auto
+		margin-right: auto
+		border: 1px solid $main
+		border-radius: 50%
+		padding: 5px
+		img
+			width: 100px
+			border-radius: 50%
+	h5
+		color: $main
+		margin-top: -50px
+	h6
+		margin-bottom: 30px
+	p  
+		font-style: italic
+
+.parallax
+	.fixed-img
+		position: relative
+		min-height: 250px
+		background-image: url('/img/bg2.jpg')
+		background-attachment: fixed
+		background-size: cover
+		.overlay
+			background-color: rgba(0,0,0,0.5)
+			width: 100%
+			padding-top: 150px
+			padding-bottom: 150px
+			position: relative
+			left: 0
+			bottom: 0
+			z-index: 100
+			text-align: center
+			div
+				margin-right: auto
+				margin-left: auto
+				text-align: center
+				width: 60%
+				color: #fff
