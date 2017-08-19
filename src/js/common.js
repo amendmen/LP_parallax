@@ -1,5 +1,13 @@
 $(document).ready(function(){
 
+	$("#menu").on("click","a", function (event) {
+		event.preventDefault();
+		var id  = $(this).attr('href'),
+		top = $(id).offset().top;
+		$('body,html').animate({scrollTop: top}, 1500);
+	});	
+
+
 	function headHeight() {
 		$( '#scene' ).css("height", $( window ).height());
 	}
@@ -36,14 +44,15 @@ $(document).ready(function(){
 
 	$( '.mem-wrap').hover(
 		function() {
-		$(this).children().next().css( 'bottom', '0')
-	}, function() {
-		$(this).children().next().css('bottom', '100%')
-	});
+			$(this).children().next().css( 'bottom', '0')
+		}, function() {
+			$(this).children().next().css('bottom', '100%')
+		});
 
 	$('.carousel').carousel({
-  interval: 5000
-})
+		interval: 5000
+	})
 	
+
 	
 })
