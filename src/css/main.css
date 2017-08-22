@@ -259,6 +259,8 @@ html.mm-opened {
       -webkit-justify-content: center;
           -ms-flex-pack: center;
               justify-content: center; }
+      .team-member-box .mem-info .info-wrap h5 {
+        text-transform: capitalize; }
 
 #testimonials {
   padding-bottom: 100px; }
@@ -328,6 +330,9 @@ html.mm-opened {
 .carousel-control {
   color: #008ED6;
   text-shadow: none; }
+
+.carousel-control:focus, .carousel-control:hover {
+  color: #008ED6; }
 
 .carousel-control.left,
 .carousel-control.right {
