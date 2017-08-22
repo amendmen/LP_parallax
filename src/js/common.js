@@ -1,4 +1,4 @@
-$(document).ready(function(){
+$(document).ready(function() {
 
 	$("#menu").on("click","a", function (event) {
 		event.preventDefault();
@@ -52,7 +52,11 @@ $(document).ready(function(){
 	$('.carousel').carousel({
 		interval: 5000
 	})
-	
 
+});
+
+window.onload = function() {
+	$(".loader").fadeOut("slow");
 	
-})
+};
+
