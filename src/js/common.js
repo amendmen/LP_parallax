@@ -1,5 +1,8 @@
 $(document).ready(function() {
 
+	divHeight($('.features-item'));
+	divHeight($('.client'));
+
 	$("#menu").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
@@ -19,15 +22,12 @@ $(document).ready(function() {
 	$("#menu").mmenu({
 
 		"slidingSubmenus": false,
-
 		"extensions": [
 		"fx-panels-zoom"
 		],
-
 		"offCanvas": {
 			"position": "right"
 		}
-
 	});
 
 	var api = $("#menu").data( "mmenu" );
@@ -57,6 +57,19 @@ $(document).ready(function() {
 
 window.onload = function() {
 	$(".loader").fadeOut("slow");
-	
 };
+
+function divHeight(blok) {
+	var maxHeight = 0;
+
+	blok.each(
+		function() {
+			currentHeight = $(this).height();
+			if(currentHeight > maxHeight)	{
+				maxHeight = currentHeight;
+			}
+		});
+	blok.height(maxHeight);
+}
+
 
