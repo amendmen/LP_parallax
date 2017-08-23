@@ -16,7 +16,8 @@ $(document).ready(function() {
 	}
 	headHeight()
 	$( window ).resize(function() {
-		headHeight()
+		headHeight();
+		
 	});
 
 	$("#menu").mmenu({
