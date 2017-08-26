@@ -188,6 +188,7 @@ html.mm-opened {
 
 .features-item,
 .client {
+  height: 100%;
   text-align: center;
   border: 1px solid rgba(0, 0, 0, 0.1);
   padding: 25px;
@@ -331,6 +332,9 @@ html.mm-opened {
 .carousel-control {
   color: #008ED6;
   text-shadow: none; }
+  .carousel-control i {
+    position: relative;
+    top: 130px; }
 
 .carousel-control:focus, .carousel-control:hover {
   color: #008ED6; }

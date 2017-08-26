@@ -1,8 +1,7 @@
 $(document).ready(function() {
 
-	divHeight($('.features-item'));
-	divHeight($('.client'));
-
+	divHeight($('.features-wrap'));
+	
 	$("#menu").on("click","a", function (event) {
 		event.preventDefault();
 		var id  = $(this).attr('href'),
