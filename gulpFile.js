@@ -93,7 +93,6 @@ gulp.task('build', ['clean', 'img', 'sass', 'scripts'], function() {
 	var buildCss = gulp.src([
 			'src/css/main.css',
 			'src/css/libs.min.css',
-			'src/css/blue.css',
 			'src/css/media.css'
 		])
 		.pipe(gulp.dest('dist/css'));
